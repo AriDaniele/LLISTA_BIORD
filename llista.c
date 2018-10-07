@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include "llista.h"
 
+
 Llista LLISTA_crea(){
     Llista l;
     l.pri = (Node *)malloc(sizeof(Node));
@@ -51,7 +52,6 @@ void LLISTA_insereixOrdenat(Llista *l, Element e){
                     }
                 }
             }
-            
             aux -> e = e;
       			aux -> seg = l -> pdi;
       			aux -> ant = l -> ant;
