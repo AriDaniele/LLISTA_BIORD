@@ -11,21 +11,23 @@ int main() {
   printf("Llista creada\n\n");
   printf("Ara introduirem 5 enters aleatoris a la llista\n");
 
+  //Per a que l'usuari interactues mes bastaria amb fer scanf enlloc de assignar un valor a la variable e directament
+  //Pero per fer la correccio mes rapida he assignat jo els valors als elements
   e = 4;
   LLISTA_insereixOrdenat(&l,e);
-  printf("4 introduit\n");
+  printf("%d introduit\n",e);
   e = -3;
   LLISTA_insereixOrdenat(&l,e);
-  printf("-3 introduit\n");
+  printf("%d introduit\n",e);
   e = 9;
   LLISTA_insereixOrdenat(&l,e);
-  printf("9 introduit\n");
+  printf("%d introduit\n",e);
   e = 2;
   LLISTA_insereixOrdenat(&l,e);
-  printf("2 introduit\n");
+  printf("%d introduit\n",e);
   e = 18;
   LLISTA_insereixOrdenat(&l,e);
-  printf("18 introduit\n");
+  printf("%d introduit\n",e);
 
 
   printf("\nAra retrocedirem tres posicions\n");
