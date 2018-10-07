@@ -28,6 +28,20 @@ int main() {
   printf("18 introduit\n");
 
 
+  printf("\nAra retrocedirem tres posicions\n");
+  LLISTA_retrocedeix(&l);
+  LLISTA_retrocedeix(&l);
+  LLISTA_retrocedeix(&l);
+  LLISTA_vesInici(&l);
+  printf("L'element del pdi és: %d\n",LLISTA_consulta(l));
+
+
+  printf("\nAra avançarem dos posicions\n");
+  LLISTA_avanca(&l);
+  LLISTA_avanca(&l);
+  printf("L'element del pdi és: %d\n",LLISTA_consulta(l));
+
+
   printf("Ara mostrarem tota la llista des de l'inici fins al final (ordre ascendent):\n");
   LLISTA_vesInici(&l);
   i = 1;
