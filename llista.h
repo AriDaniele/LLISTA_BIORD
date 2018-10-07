@@ -23,7 +23,7 @@ void LLISTA_retrocedeix(Llista *l);
 void LLISTA_vesInici(Llista *l);
 void LLISTA_vesFi(Llista *l);
 int LLISTA_inici(Llista l);
-int LLISTA_final(Llista l);
+int LLISTA_fi(Llista l);
 int LLISTA_buida(Llista l);
 void LLISTA_destrueix(Llista *l);
 
