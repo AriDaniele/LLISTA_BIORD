@@ -27,7 +27,7 @@ Llista LLISTA_crea(){
 }
 
 
-void LLISTA_insereixOrdenat(Llista *l, Element m){
+void LLISTA_insereixOrdenat(Llista *l, Element e){
     Node *aux;
     int control = 0;
     if (l -> pdi -> ant == NULL)
@@ -44,14 +44,14 @@ void LLISTA_insereixOrdenat(Llista *l, Element m){
                 if(l -> pdi == l -> ult){
                     control = 1;
                 }else{
-                    if(l -> pdi -> e > m){
+                    if(l -> pdi -> e > e){
                         control = 1;
                     }else{
                         LLISTA_avanca(l);
                     }
                 }
             }
-            aux -> e = m;
+            aux -> e = e;
             aux -> seg = l -> pdi;
             aux -> ant = l -> pdi -> ant;
             l -> pdi -> ant -> seg = aux;
@@ -138,4 +138,3 @@ void LLISTA_destrueix(Llista *l){
     l -> pri = NULL;
     l -> ult = NULL;
 }
-
