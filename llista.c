@@ -51,11 +51,12 @@ void LLISTA_insereixOrdenat(Llista *l, Element e){
                     }
                 }
             }
+            
             aux -> e = e;
-            aux -> seg = l -> pdi;
-            aux -> ant = l -> pdi -> ant;
-            l -> pdi -> ant -> seg = aux;
-            l -> pdi -> ant = aux;
+      			aux -> seg = l -> pdi;
+      			aux -> ant = l -> ant;
+      			l -> pdi -> ant -> seg = aux;
+      			l -> pdi -> ant = aux;
         }
     }
 }
