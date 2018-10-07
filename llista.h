@@ -14,7 +14,6 @@ typedef struct{
     Node *pdi;
 }Llista;
 
-
 Llista LLISTA_crea();
 void LLISTA_insereixOrdenat(Llista *l, Element e);
 Element LLISTA_consulta(Llista l);
@@ -29,4 +28,3 @@ int LLISTA_buida(Llista l);
 void LLISTA_destrueix(Llista *l);
 
 #endif
-
