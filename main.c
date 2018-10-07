@@ -1,10 +1,12 @@
 #include "llista.h"
 #include <stdio.h>
 
-int int main() {
+
+int main() {
   int opcio, i, e;
   char sortir = 'k';
   Llista l;
+
   l = LLISTA_crea();
   printf("Llista creada\n\n");
   printf("Ara introduirem 5 enters aleatoris a la llista\n");
