@@ -1,4 +1,5 @@
 #include "llista.h"
+#include <stdio.h>
 
 int int main() {
   int opcio, i, e;
