@@ -42,6 +42,12 @@ int main() {
   printf("L'element del pdi és: %d\n",LLISTA_consulta(l));
 
 
+  printf("\nAra esborrarem el pdi\n");
+  e = LLISTA_consulta(l);
+  LLISTA_esborra(&l);
+  printf("Número %d de la llista esborrat\n\n",e);
+
+
   printf("Ara mostrarem tota la llista des de l'inici fins al final (ordre ascendent):\n");
   LLISTA_vesInici(&l);
   i = 1;
