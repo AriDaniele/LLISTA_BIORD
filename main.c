@@ -26,6 +26,24 @@ int int main() {
   printf("18 introduit\n");
 
 
+  printf("Ara mostrarem tota la llista des de l'inici fins al final (ordre ascendent):\n");
+  LLISTA_vesInici(&l);
+  i = 1;
+  while(!LLISTA_fi(l)){
+      printf("Element %d: %d\n",i,LLISTA_consulta(l));
+      LLISTA_avanca(&l);
+      i++;
+  }
+
+  i--;
+  printf("\nAra mostrarem tota la llista des del final fins a l'inici (ordre descendent):\n");
+  LLISTA_vesFi(&l);
+  while(!LLISTA_inici(l)){
+      printf("Element %d: %d\n",i,LLISTA_consulta(l));
+      LLISTA_retrocedeix(&l);
+      i--;
+  }
+
   printf("\nA continuació la llista quedarà esborrada i es sortirà del programa\n");
 
   LLISTA_destrueix(&l);
